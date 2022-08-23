@@ -1,0 +1,838 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fuenteDos;
+}
+
+/*FUENTES*/
+
+@font-face {
+    font-family: fuenteUno;
+    src: url(../fuentes/Dancing_Script/);
+    
+}
+@font-face {
+    font-family: fuenteDos;
+    src: url(../fuentes/Mochiy_Pop_One/MochiyPopOne-Regular.ttf);
+}
+@font-face {
+    font-family: fuenteTres;
+    src: url(../fuentes/Square_Peg/SquarePeg-Regular.ttf);
+}
+
+/* subir */
+
+.subir{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 50px;    
+}
+
+.subir img{   
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+
+
+/* HEADER */
+
+.cabecera{
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.192);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 45%  10%;
+    padding: 20px;
+    min-height:fit-content;
+    align-items: center;
+}
+.head{
+    width: 100%;
+    justify-self: center;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.titulo{
+    font-size: 3em;
+    text-align: center;
+    color: rgb(247, 9, 9);
+    text-shadow:2px 12px 8px rgb(69, 99, 71);
+}
+.subTitulo{
+    font-size: 1em;
+    height: auto;
+    text-align: center;
+    color: rgb(247, 9, 9);
+    text-shadow:1px 3px 1px rgba(46, 9, 6, 0.589);
+}
+
+/* NAV */
+
+.direccionador{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    grid-gap: 10px;
+    min-height: 100vh;    
+}
+.naver a{
+    text-decoration: none;
+    color: white;
+
+}
+.naver{
+    height: 60px;
+    font-size: 1.8em;
+    text-align:start;
+    padding: 5px;
+    text-shadow: 5px 5px 10px black;  
+    border-radius: 0px 0px 40px 0px;  
+}
+.nosotros{
+    background-color:#ff6787 ;
+    box-shadow: 14px 14px 50px #ff6787 ;
+}
+.historia{
+    background-color: #fe8e7b;
+    box-shadow: 14px 14px 50px #fe8e7b;
+}
+.convivencia{
+    background-color: #ffb68c;
+    box-shadow: 14px 14px 50px #ffb68c;
+}
+.reglamento{
+    background-color: #97ed97;
+    box-shadow: 14px 14px 50px #97ed97;
+}
+.recursos{
+    background-color: #55cbd3;
+    box-shadow: 14px 14px 50px #55cbd3;
+}
+.actividades{
+    background-color: #d18bc0;
+    box-shadow: 14px 14px 50px #d18bc0;;
+}
+.diversion{
+    background-color: #DDBFF2;
+    box-shadow: 14px 14px 50px #DDBFF2;
+}
+
+.nosotros:hover{
+    background-color: #36B390;
+    box-shadow: 14px 14px 50px #36B390;
+    color: #ff6787;
+}
+.historia:hover{
+    background-color: #6EECFF;
+    box-shadow: 14px 14px 50px #6EECFF;
+    color: #fe8e7b;
+}
+.convivencia:hover{
+    background-color: #80BDFF;
+    box-shadow: 14px 14px 50px #80BDFF;
+    color: #ffb68c;
+}
+.reglamento:hover{
+    background-color: #9577A1;
+    box-shadow: 14px 14px 50px #9577A1;
+    color: #97ed97;
+}
+.recursos:hover{
+    background-color: #C7EDC7;
+    box-shadow: 14px 14px 50px #C7EDC7;
+    color: #9577A1;
+}
+.actividades:hover{
+    background-color: #97D1B0;
+    box-shadow: 14px 14px 50px #97D1B0;
+    color: #d18bc0;
+}
+.diversion:hover{
+    background-color: #D2F2CB;
+    box-shadow: 14px 14px 50px #D2F2CB;
+    color: #DDBFF2;
+}
+
+
+/* SECTION */
+
+/*index*/
+.galeria{
+    width: 100%;
+    background-color: rgba(0, 255, 128, 0.075);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+}
+.galeria h3{
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(255, 238, 145);
+    text-shadow:1px 1px 15px rgb(47, 14, 235);
+    padding-top: 20px;
+}
+.galeria p{
+    text-align:center;
+    padding: 10px;
+    color: rgb(255, 238, 145);
+}
+.item{
+    background-color: #333;
+    border: 2px solid #000;
+    width: 100%;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 5px;
+}
+.item1{
+    background-image:  url(../img/frente.png);
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    background-color: rgb(126, 34, 6);
+    height: auto;    
+}
+.item3{
+    background-image: url(../img/pasilloJuegos.png);
+    background-size: cover;
+    background-position: center;
+}
+.item4{
+    background-image: url(../img/patioInterno.png);
+    background-size: cover;
+    background-position: center;
+}
+.item5{
+    background-color: #A229D9;
+    height: auto;
+}
+.item6{
+    background-image: url(../img/patioInterno2.png);
+    background-size: cover;
+    background-position: center;
+}
+.item7{
+    background-image: url(../img/WhatsApp\ Image\ 2022-07-18\ at\ 8.49.23\ PM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.item8{
+    background-color: darkgreen;
+    height: auto;
+}
+.item9{
+    background-image: url(../img/WhatsApp\ Image\ 2022-07-18\ at\ 9.00.00\ PM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*nosotros*/
+
+.articulo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    padding: 20px;
+    grid-gap: 10px;
+    background-color: rgba(0, 0, 0, 0.13);
+    align-content: center;
+    row-gap: 30px;
+
+}
+.art{
+    font-size: 1.5em;
+    color: #24B33B;
+    text-shadow:1px 1px 2px rgb(75, 3, 63);
+    text-align:center;
+    align-self:auto;
+    
+}
+.art1{
+    font-size: 2em;
+    text-align: center; 
+    text-shadow:4px 4px 20px rgb(75, 3, 63);
+
+}
+.art img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+/*historia*/
+
+.historiaArt{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    padding: 20px;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+.hist{
+    font-size: 1.5em;
+    color: #7AFFC7;
+    text-shadow:1px 1px 2px #44201a;
+    text-align:center;
+    align-self:auto;
+
+}
+.hist img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.his1{
+    font-size: 2em;
+    text-align: center; 
+    text-shadow:4px 4px 20px #44201a;
+}
+
+/* convivencia*/
+
+.artConvivencia{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+    padding: 20px;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+.conv{
+    font-size: 1.3em;
+    color: #3EB3B2;
+    text-shadow:1px 1px 1px #B37450;
+    text-align:justify;
+    align-self:auto;
+    padding: 10px;
+}
+.conv h2{
+    font-size: 2.5em;
+    text-align: center;
+}
+.conv h3{
+    font-size: 1.8em;
+    text-align: center;
+}
+.conv li{
+    list-style-image:url(../img/champinon.png);
+}
+.conv img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+/* FOOTER */
+
+.piePagina{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 40% 20%;
+    background-color: rgba(0, 0, 0, 0.911);
+    grid-gap: 10px;
+    font-size: 1.3em;
+    color:white;
+    text-shadow:1px 1px 1px rgba(5, 5, 0, 0.836);
+    text-align: center;
+    padding: 10px;
+}
+.piePagina a{
+    text-decoration: none;
+    color: #E3812B;
+}
+.pie1{
+    justify-self:center;
+}
+.pie2{
+    justify-self: center;
+}
+.botonContacto{
+    width: 400px;
+    height: 60px;
+    font-size: 1.8em;
+    font-weight:lighter;
+    text-align: center;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: rgb(154, 205, 50);
+    box-shadow: 14px 14px 50px #9acd32;
+    text-shadow:1px 1px 1px rgba(0, 0, 0);
+    justify-self:center;
+}
+.botonContacto:hover{
+    background-color: #A229D9;
+    box-shadow: 14px 14px 50px #A229D9;
+    color: #9acd32;
+}
+
+@media only screen and (min-width: 480px){
+
+    .cabecera{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 30px;
+        min-height:fit-content;
+    }
+    .logo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .titulo{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 2.5em;
+    }
+    .subTitulo{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 0.9em;
+    }
+
+    .direccionador{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-gap: 5px;
+        min-height:fit-content;
+    }
+    .naver{
+        font-size: 1em;
+        text-align:center;
+        padding: 10px;
+        text-shadow: 5px 5px 15px black;
+        border-radius: 40px 0px 40px 0px; 
+        height: min-content;
+    }
+    .nosotros{
+        grid-column: 1/3;
+        grid-row: 1/2;  ;      
+    }
+    .historia{
+        grid-column: 1/2;
+        grid-row: 2/3;    }
+    .convivencia{
+        grid-column: 2/3;
+        grid-row: 2/3;    }
+    .reglamento{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .recursos{
+        grid-column:1/2;
+        grid-row: 4/5;
+    }
+    .actividades{
+        grid-column:2/3;
+        grid-row: 4/5;
+    }
+    .diversion{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    
+    /* index */
+    
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 350px) ;
+    }
+    .item9{
+        grid-column:1/3 ;
+        grid-row: 5/6;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+
+    .direccionador{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-gap: 10px;
+        min-height: fit-content;
+    }   
+    .naver{
+        font-size: 1em;
+        text-align:center;
+        padding: 10px;
+        text-shadow: 5px 5px 15px black;
+    }
+    .nosotros{
+        grid-column: 1/4;
+        grid-row: 1/2;     
+    }
+    .historia{
+        grid-column: 1/3;
+        grid-row: 2/3;    }
+    .convivencia{
+        grid-column: 3/4;
+        grid-row: 2/3;    }
+    .reglamento{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .recursos{
+        grid-column:1/2;
+        grid-row: 4/5;
+    }
+    .actividades{
+        grid-column:2/4;
+        grid-row: 4/5;
+    }
+    .diversion{
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+    
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 200px);
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item4{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .item5{
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+    .item6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .item7{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .item8{
+        grid-column: 3/4;
+        grid-row: 4/6;
+    }
+    .item9{
+        grid-column: 1/3;
+        grid-row: 5/6;    
+    }   
+    .piePagina{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        min-height: fit-content;
+        font-size: 1em;
+    }
+    .pie1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .pie2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .botonContacto{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        text-align: center;
+        align-self: center;
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+
+.cabecera{
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr 1fr;
+    min-height: fit-content;
+}
+.logo{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.titulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 1.7rem;
+}
+.subTitulo{
+    grid-column: 2/7;
+    grid-row: 2/3;
+    font-size: 0.8em;
+}
+.direccionador{
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 1fr;
+    min-height: fit-content;
+}
+.naver a{
+    text-shadow: 1px 1px 5px black;
+}
+.naver{
+    font-size: 0.8em;
+    text-align:center;
+    padding: auto;
+}
+.nosotros{
+    grid-column: 1/2;
+    grid-row: 1/2;     
+}
+.historia{
+    grid-column: 2/3;
+    grid-row: 1/2;    
+}
+.convivencia{
+    grid-column: 3/4;
+    grid-row: 1/2;    }
+.reglamento{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.recursos{
+    grid-column:5/6;
+    grid-row: 1/2;
+}
+.actividades{
+    grid-column:6/7;
+    grid-row: 1/2;
+}
+.diversion{
+    grid-column: 7/8;
+    grid-row: 1/2;
+}
+/* index */
+.galeria{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    min-height: fit-content;
+}
+.item1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.item2{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.item3{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.item4{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+.item5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.item6{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.item7{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.item8{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.item9{
+    grid-column: 3/5;
+    grid-row: 4/5;    
+}
+
+    /*nosotros*/
+
+.articulo{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
+}
+.art1{
+    grid-column: 1/5;
+    
+}
+.art2{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.art3{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+.art4{
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+.art5{
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+.art6{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+.art7{
+    grid-column: 3/5;
+    grid-row: 5/6;
+}
+.art8{
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
+/*historia*/
+
+.historiaArt{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, auto);
+}
+.his1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.his2{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.his3{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+.his4{
+    grid-column: 2/5;
+    grid-row: 3/4;
+}
+.his5{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.his6{
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+.his7{
+    grid-column:2/4 ;
+    grid-row:5/6 ;
+}
+
+/* convivencia*/
+.artConvivencia{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(13, auto);
+}
+.conv h2{
+    font-size: 2em;
+}
+.conv h3{
+    font-size: 1.3em;
+}
+.conv {
+    font-size: 0.9em;
+}
+.conv1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.conv2{
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+.conv3{
+    grid-column: 1/2;
+    grid-row: 4/6;
+}
+.conv4{
+    grid-column: 2/4;
+    grid-row: 4/6;
+}
+.conv5{
+    grid-column: 1/4;
+    grid-row: 6/8;
+}
+.conv6{
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
+.conv7{
+    grid-column: 1/3;
+    grid-row: 8/10;
+}
+.conv8{
+    grid-column:1/4 ;
+    grid-row: 10/12;
+}
+.conv9{
+    grid-column: 1/2;
+    grid-row: 12/13;
+}
+.conv10{
+    grid-column: 2/4;
+    grid-row: 12/14;
+}
+.piePagina{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    font-size: 0.8rem;
+    min-height: fit-content;
+}
+.pie1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.pie2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.botonContacto{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: center;
+    width: 200px;
+}
+}
+
+
+
+/*COLORES SEGUN PAGINAS*/
+
+#fondoInicio{background-color: #e29b1f;}
+#fondoNosotros{background-color: #ff6787;}
+#fondoHistoria{background-color: #fe8e7b;}
+#fondoConvivencia{background-color: #ffb68c;}
+#fondoReglamento{background-color: #97ed97;}
+#fondoRecursos{background-color: #55cbd3;}
+#fondoActividades{background-color: #d18bc0;}
+#fondoDiversion{background-color: #DDBFF2;}
+#fondoContacto{background-color: #C8DECC;}
